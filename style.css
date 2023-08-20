@@ -1,0 +1,439 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(69, 69, 75);
+     overflow-x: hidden;
+
+     
+}
+.nav-container{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.lists{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 50px;
+}
+.nav-href{
+transition: all 0.2s;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.nav-href:hover{
+background-color: white;
+color: black;
+}
+.image{
+    height: 500px;
+    background-image: url(war.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shadow{
+    width: 100%;
+    height: 200px;
+position: absolute;
+top: 300px;
+z-index: 0;
+background-image: linear-gradient(to bottom , rgba(69, 69, 75, 0) , rgb(69, 69, 75));
+}
+
+.container-film{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.film{
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-image{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.container-image:hover{
+    border-radius: 0px;
+}
+.our-new-films{
+    width: 100%;
+    height: 59px;;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.a{
+    text-align: center;
+}
+.new-films{
+    font-size: 1.1rem;
+}
+span{
+    color: white;
+}
+.line1{
+    width: 35%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.logo{
+    margin-left: 20px;
+}
+
+
+.space{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(38, 38, 67);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ismahel-image{
+    transform: translateY(-50px);
+}
+
+.soma-text{
+    height: 300px;
+    width: 40%;
+     display: flex;
+    padding: 10px;
+     justify-content: flex-end;
+     align-items: center;
+     color: white;
+     border-right: 2px solid white;
+}
+
+.ismahel-hamza{
+    color: blue;
+}
+.ismahel-hamza:hover{
+color: rgb(25, 25, 84);
+}
+.account{
+    height: 90%;
+    width: 40%;
+    color: white;
+    display: flex;
+    padding: 10px;
+     justify-content: flex-start;
+     align-items: center;
+     flex-wrap: wrap;
+}
+.size-account{
+    font-size: 0.7rem;
+
+}
+.account{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.image-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.lists{
+    z-index: 10;
+}
+
+.scrool-btn{
+    display: flex;
+    right: 20px;
+    bottom: 20px;
+width: 50px;
+height: 50px;
+background-color: blue;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+position: fixed;
+bottom: 20px;
+right: 20px;
+transform: translateY(100px);
+}
+.animation{
+   transform: translateY(0);
+}
+.about-list{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -500%);
+    background-color: white;
+    width: 60%;
+    height: 350px;
+    z-index: 10;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+text-align: center;
+}
+.open-about-list{
+    transform: translate(-50% , -50%);
+}
+.fa-xmark{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.p-dear{
+    font-size: 1.3rem;
+    color: rgb(74, 78, 195);
+}
+
+@media(max-width:860px){
+    .lists{
+        transition: all 0.3s;
+        width: 100%;
+        height: 400px;
+        transform: translateX(-1000px);
+        background-color: rgba(72, 72, 76, 0.94);
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 60px 0 0 0 ;
+        backdrop-filter: blur(100px);
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        width: 85%;
+        z-index: 10;
+    
+    }
+    .parent-line{
+        width: 40px;
+        height: 30px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        transition: all 0.3s;
+    }
+    .active:nth-child(1){
+        transform: translateY(15px) rotate(45deg);
+    }
+    .active:nth-child(2){
+  display: none;
+    }
+    .active:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    }
+    .open-list{
+        transform: translateX(0px);
+    }
+}
+@media(max-width:670px){
+    body{
+        overflow-x: hidden;
+    }
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(72, 72, 76, 0.94);
+}
+.main-image{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgba(52, 52, 54, 0.94);
+    border-radius: 30px;
+}
+.access-film::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+.access-film::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(251, 0, 0);
+}
+.access-film{
+    position: absolute;
+  top: 0;
+  left: 0;
+    width: 100%;
+    background-color: rgb(52, 52, 54);
+    display: flex;
+    align-items: center;
+    transform: translateX(-2000px);
+    justify-content: center;
+}
+.access-layar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 450px;
+    height: 700px;
+}
+.access-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box:nth-child(1){
+    background-color: red;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.box:nth-child(2){
+   height: 520px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+gap: 20px;
+
+}
+
+
+.box:nth-child(3){
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.film-name{
+    font-size: 2rem;
+}
+.none{
+    display: none;
+    background-color: rgb(52, 52, 54);
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:470px){
+    .box:nth-child(1){
+        margin-right: 0;
+         width: 100%;
+    }
+  
+}
+@media(max-width:950px){
+    .box{
+        width: 100%;
+    }
+}
+video{
+    width: 100%;
+}
+.about-creator{
+width: 100%;
+height: 70px;
+transform: translateY(100px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.sma{
+    width: 100%;
+    height: 100%;
+    display: flex;
+align-items: center;
+gap: 10px;
+}
+.creator-image{
+    height: 100%;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(college.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.btn-back-prev{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+.btn-back-prev:hover{
+color: rgb(235, 133, 133);
+}
+
