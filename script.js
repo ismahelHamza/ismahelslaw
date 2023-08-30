@@ -69,6 +69,8 @@ var filmInfo = [
     },
 ];
 
+alert("welcome to our webside");
+
 const main_image = document.querySelectorAll('.main-image')
 const access_film = document.querySelector('.access-film')
 
