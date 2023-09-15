@@ -139,6 +139,11 @@ document.querySelector(".fa-xmark").addEventListener('click' , function(){
    document.querySelector(".about-list").classList.remove("open-about-list")
 })
 
+const newFilmsa = document.querySelector(".new-films");
+const test = document.querySelector(".test");
+
+
+
 
 
 
