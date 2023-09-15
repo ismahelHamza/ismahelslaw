@@ -141,6 +141,12 @@ document.querySelector(".fa-xmark").addEventListener('click' , function(){
 
 const newFilmsa = document.querySelector(".new-films");
 const test = document.querySelector(".test");
+const click = document.querySelector(".click");
+
+click.addEventListener("click" , function(){
+    newFilmsa.innerHTML = test.value ;      
+})
+
 
 
 
